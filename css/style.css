@@ -305,8 +305,8 @@ body {
 }
 
 #main .main-visual__typo {
-  margin-top: 30px;
-  max-width: 40%;
+  max-width: 650px;
+  margin-top: 31px;
 }
 #main .main-visual__typo .casaTypo {
   font-size: 22px;
@@ -314,47 +314,70 @@ body {
   font-weight: 400;
   letter-spacing: 0;
 }
-#main .main-visual__typo .casaTypo > a {
+#main .main-visual__typo .casaTypo a {
   display: inline-block;
   max-width: 100%;
   border-bottom: 1px solid transparent;
   transition: border 0.3s;
 }
-#main .main-visual__typo .casaTypo:hover a {
-  border-bottom-color: #000;
+#main .main-visual__typo .casaTypo a:hover {
+  border-bottom: 1px solid #222;
 }
 #main .main-cases {
+  margin-top: 172px;
   opacity: 1;
   pointer-events: all;
-  margin-top: 140px;
 }
 #main .main-cases .main-cases__title {
   margin-bottom: 28px;
 }
-#main .main-cases .main-cases__title .jt-motion-anchor .jt-heading--01 {
-  vertical-align: baseline;
-  font-size: 70px;
+#main .main-cases .main-cases__title h2.motion-anchor {
+  font-size: 0;
 }
-#main .main-cases .main-cases__title .jt-motion-anchor .jt-text--04 {
+#main .main-cases .main-cases__title h2.motion-anchor .heading--01 {
+  font-size: 90px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#main .main-cases .main-cases__title h2.motion-anchor .text--04 {
+  margin-top: 18px;
   margin-left: 11px;
-  font-size: 18px;
   vertical-align: top;
   font-style: normal;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: inline-block;
 }
-#main .main-cases .main-cases__title .jt-motion-anchor .jt-motion-anchor__blank {
+#main .main-cases .main-cases__title .motion-anchor__blank {
   display: inline-block;
   width: 29px;
   height: 3px;
-  bottom: 15px;
   position: relative;
-  left: 11px;
-  bottom: 1px;
   animation: blink_caret 1.2s step-end infinite;
-  vertical-align: bottom;
-  left: 0;
-  background: #000;
+}
+@keyframes blink_caret {
+  0%, 100% {
+    background: transparent;
+  }
+  50% {
+    background: #000;
+  }
 }
 
+.main-cases__last .main-cases__list .main-cases__group {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  border-top: 1px solid #000;
+}
+.main-cases__last .main-cases__list .main-cases__group .main-cases__first {
+  padding: 100px 100px 100px 0;
+  width: 63%;
+  box-sizing: border-box;
+}
 #mobile-main {
   display: none;
 }

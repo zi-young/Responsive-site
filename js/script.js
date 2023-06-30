@@ -15,3 +15,9 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+let target=document.querySelector(".motion-anchor__blank");
+function blink(){
+    target.classList.toggle("active");
+}
+setInterval(blink, 500); //blink함수를 0.5초에 한번씩 호출
