@@ -19,23 +19,7 @@ $color-gray-dark: #474747;
 $bg-color:#222;
 $white-color:#fff;
 
-// @mixin mq($screen-width){
-//     @if $screen-width=='small-screen'{  
-//         @media screen and (max-width:1090px){
-//             @content;
-//         }
-//     }
-// }   
 
-
-// @mixin mq($screen-width){
-//     @if $screen-width=='xxsmall-screen'{  
-//         // @media screen and (max-width:1022px){
-//         @media screen and (max-width:540px){
-//             @content;
-//         }
-//     }
-// }   
 html{height: 100%}
 body{color: $white-color; height: 100%;}
 body{font-family: sans-serif;}
@@ -239,7 +223,6 @@ a{color: #000}
                     &:nth-child(3){flex-grow: .5;}
                     &:nth-child(4){flex-grow: .5;}
                     &:nth-child(5){flex-grow: .5;}
-                    // &:nth-child(6){flex-grow: .5;}
                     a{
                         font-size: 20px;
                         border-bottom: 1px solid rgba(255,255,255,1);
@@ -292,6 +275,61 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+#main{
+    .main-visual__typo{
+        margin-top: 30px;
+        max-width: 40%;
+        .casaTypo{
+            font-size: 22px;
+            line-height: 1.54;
+            font-weight: 400;
+            letter-spacing: 0;
+           >a{
+            display: inline-block;
+            max-width: 100%;
+            border-bottom: 1px solid transparent;
+            -webkit-transition: border .3s;
+            transition: border .3s;
+           }
+           &:hover a{border-bottom-color: #000;}
+        }
+    }
+    .main-cases{
+        // transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -600, 0, 1);
+        opacity: 1;
+        pointer-events: all;
+        margin-top: 140px;
+        .main-cases__title{
+            margin-bottom: 28px;
+            .jt-motion-anchor{
+                .jt-heading--01{
+                    vertical-align: baseline;
+                    font-size: 70px;
+                }
+                .jt-text--04{
+                    margin-left: 11px;
+                    font-size: 18px;
+                    vertical-align: top;
+                    font-style: normal;
+                }
+                .jt-motion-anchor__blank{
+                    display: inline-block;
+                    width: 29px;
+                    height: 3px;
+                    bottom: 15px;
+                    position: relative;
+                    left: 11px;
+                    bottom: 1px;
+                    -webkit-animation: blink_caret 1.2s step-end infinite;
+                    animation: blink_caret 1.2s step-end infinite;
+                    vertical-align: bottom;
+                    left: 0;
+                    background: #000;
+                }
+            }
+        }
+    }
 }
 
 #mobile-main{display: none;}
