@@ -14,6 +14,22 @@ $color-blue-3: #d6eaff;
 $color-blue-dark: #3f4a56;
 $color-gray-light: #b9b9b9;
 $color-gray-dark: #474747;
+.jt-heading--03{ margin-top: 31px;
+    font-size: 22px;
+    line-height: 1.54;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.main-cases__group--primary:after{left: 62%;}
+.main-cases__group > div {
+    position: relative;
+    padding-top: 114px;
+    padding-bottom: 114px;
+}
+.main-cases__first {
+    padding-right: 114px;
+}
+.main-cases__last{padding-left: 114px;}
 
 
 $bg-color:#222;
@@ -361,9 +377,11 @@ body {
             }
         }
     }
-    .main-cases__last{
+    .main-cases__content{
         .main-cases__list{
-            .main-cases__group{
+            position: relative;
+            z-index: 1;
+            .main-cases__group--01{
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -ms-flexbox;
@@ -374,20 +392,58 @@ body {
                 align-items: flex-start;
                 position: relative;
                 border-top: 1px solid #000;
+                &:after{
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    background: #000;
+                }
                 .main-cases__first{
-                    padding: 100px 100px 100px 0;
+                    // padding: 114px 114px 114px 0;
                     width: 63%;
                     box-sizing: border-box;
                     .main-cases__item{
-                        a{
-                            .main-cases__thumb{}
+                        float: right;
+                        width: 100%;
+                        a{display: block;}
                         }
                     }
                 }
-                .main-cases__last{}
+                .main-cases__last{
+                    width: 37%;
+                    // padding: 114px 0 114px 114px;
+                    .main-cases__secondary{
+                        position: relative;
+                        >a{
+                            >.main-cases__thumb{
+                                img{
+                                    display: block;
+                                    width: 100%;
+                                    height: auto;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transition: 1s;
+                                    -webkit-transition: 1s;
+                                }
+                            }
+                            &:hover img{opacity: 0; visibility: hidden;}
+                            &:hover .jt-heading--03>span{    border-bottom: 1px solid transparent; border-bottom-color: #000; transition: .5s;}
+                            .main-cases__thumb--hover{
+                                img{
+                                   opacity: 1; visibility: visible;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
-    }
+    
 
 
 
