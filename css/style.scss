@@ -638,15 +638,13 @@ body {
 
 }
 
-#mobile-main {
-    display: none;
-}
+#mobile-main {display: none;}
 
 // section
 
 #stories{width: 100%; background: #E7E4DD}
 #stories .container{padding: 100px 0;}
-#stories .storiesBody{position: relative; width: 100%; height: 600px;}
+#stories .storiesBody{position: relative; width: 100%; height: 650px;}
 #stories .storiesBody .contents{
     width: 22%;
     height: auto;
@@ -661,15 +659,13 @@ body {
     color: #fff;
 }
 /* 첫번째 이미지 가운데 위치 */
-#stories .storiesBody .col1{left: 50%; top: 100px; transform: scale(1); z-index: 1; margin-left: -11%;}
+#stories .storiesBody .col1{left: 50%; top: 150px; transform: scale(1); z-index: 1; margin-left: -11%;}
 #stories .storiesBody .col2{left: 10%; top: 50px; transform: scale(0.9); opacity: .5;}
 #stories .storiesBody .col3{left: 50%; transform: scale(0.8); margin-left: -11%; opacity: .2;}
 #stories .storiesBody .col4{left: 68%; top: 50px; transform: scale(0.9); opacity: .5;}
 #stories .storiesBody .contents .conImg{position: relative; width: 100%;}
 #stories .storiesBody .contents .conImg img{width: 100%;}
 #stories .storiesBody .contents .conT{padding: 10px 15px; position: relative;}
-#stories .storiesBody .contents .conT dl{}
-#stories .storiesBody .contents .conT dl dt{}
 #stories .storiesBody .contents .conT dl dt a{color: #000; font-size: 12px; font-weight: bold; display: inline-block; padding: 10px 0 0;}
 #stories .storiesBody .contents .conT dl dd{margin-top: 5px; font-size: 15px;}
 /* 16px에 80%만 가지게 */
@@ -726,6 +722,18 @@ body {
                     .main-cases__last{
                         padding: 60px 0 60px 60px;
                     }
+                }
+            }
+        }
+    }
+    #section{
+        #stories{
+            >.container{
+                padding: 0;
+                .storiesBody{
+                    height: 700px;
+                    position: relative;
+                    top: 80px;
                 }
             }
         }
@@ -806,24 +814,29 @@ body {
         }
     }
     #section{
-        .container{
-            .storiesBody{display: none;}
+        #stories{
+            >.container{
+                padding: 0;
+                .storiesBody{
+                    height: 550px;
+                    position: relative;
+                    top: 60px;
+                    .contents{
+                        .conT{
+                            dl{
+                                dt{
+                                    a{font-size: 16px;}
+                                    
+                                }
+                                dd{font-size: 0;}
+                            }
+                        }
+                        &:hover dl>dt>a{color: #fff;}
+                    }
+                }
+            }
         }
     }
-    #wrap #gallery{width: 100%;}
-#wrap #gallery .title{padding: 100px 0;}
-#wrap #gallery .title h2{text-align: center; font-size: 24px; color: cadetblue;}
-#wrap #gallery .gallery-wrap{width: 100%; height: 290px; position: relative;}
-#wrap #gallery .gallery-wrap ul{position: absolute; top: 0; left: 0; width: calc(290px*12); display: flex; flex-flow: nowrap; height: 100%;}
-#wrap #gallery .gallery-wrap ul li{width: 290px; height: 100%; list-style: none;}
-#wrap #gallery .gallery-wrap ul li figure{width: 100%; height: 100%;}
-#wrap #gallery .gallery-wrap ul li .img-bg-1{background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover; }
-#wrap #gallery .gallery-wrap ul li .img-bg-2{background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover; }
-#wrap #gallery .gallery-wrap ul li .img-bg-3{background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover; }
-#wrap #gallery .gallery-wrap ul li .img-bg-4{background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover; }
-#wrap #gallery .gallery-wrap ul li .img-bg-5{background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover; }
-#wrap #gallery .gallery-wrap ul li .img-bg-6{background: url(../img/img_6.png) no-repeat 50% 50%/cover; }
-
 }
 
 
@@ -834,7 +847,6 @@ body {
         display: block;
         z-index: 100;
     }
-
     #header {
         padding: 0 25px;
         height: 80px;
@@ -876,11 +888,9 @@ body {
             }
         }
     }
-
     #main {
         display: none;
     }
-
     #mobile-main {
         display: block;
         padding: 80px 25px;
@@ -1075,4 +1085,15 @@ body {
             }
         }
     }
+    #section{display: none;}
+    #wrap #mobile-gallery{width: 100%;}
+    #wrap #mobile-gallery .gallery-wrap{width: 90%; height: 290px; position: relative; display: flex;}
+    #wrap #mobile-gallery .gallery-wrap ul{position: absolute; top: 0; left: 0; width: calc(290px*6); display: flex; flex-flow: nowrap; height: 100%; display: flex;}
+    #wrap #mobile-gallery .gallery-wrap ul li{width: 270px; height: 100%; list-style: none; margin-right: 10px; display: flex; box-sizing: border-box;}
+    #wrap #mobile-gallery .gallery-wrap ul li figure{width: 100%; height: 100%;}
+    #wrap #mobile-gallery .gallery-wrap ul li .img-bg-1{background: url(../img/Geochang_Galery_1-768x768.jpg) no-repeat 50% 50%/cover; }
+    #wrap #mobile-gallery .gallery-wrap ul li .img-bg-2{background: url(../img/single-case-humb-01.jpg) no-repeat 50% 50%/cover; }
+    #wrap #mobile-gallery .gallery-wrap ul li .img-bg-3{background: url(../img/geoje_thumbnail_2.jpg) no-repeat 50% 50%/cover; }
+    #wrap #mobile-gallery .gallery-wrap ul li .img-bg-4{background: url(../img/Damyang_768x768_Main.jpg) no-repeat 50% 50%/cover; }
+    .list{border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 10px 0; box-sizing: border-box;}
 }

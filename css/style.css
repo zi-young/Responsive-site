@@ -516,7 +516,7 @@ body {
 #stories .storiesBody {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 650px;
 }
 
 #stories .storiesBody .contents {
@@ -537,7 +537,7 @@ body {
 /* 첫번째 이미지 가운데 위치 */
 #stories .storiesBody .col1 {
   left: 50%;
-  top: 100px;
+  top: 150px;
   transform: scale(1);
   z-index: 1;
   margin-left: -11%;
@@ -649,6 +649,14 @@ body {
   #main .main-cases__content .main-cases__list .main-cases__group--02 .main-cases__last {
     padding: 60px 0 60px 60px;
   }
+  #section #stories > .container {
+    padding: 0;
+  }
+  #section #stories > .container .storiesBody {
+    height: 700px;
+    position: relative;
+    top: 80px;
+  }
 }
 @media screen and (max-width: 992px) {
   #header div .header-logoNav nav > span > a {
@@ -705,60 +713,22 @@ body {
     padding: 52px 0 52px 52px;
     width: 37%;
   }
-  #section .container .storiesBody {
-    display: none;
+  #section #stories > .container {
+    padding: 0;
   }
-  #wrap #gallery {
-    width: 100%;
-  }
-  #wrap #gallery .title {
-    padding: 100px 0;
-  }
-  #wrap #gallery .title h2 {
-    text-align: center;
-    font-size: 24px;
-    color: cadetblue;
-  }
-  #wrap #gallery .gallery-wrap {
-    width: 100%;
-    height: 290px;
+  #section #stories > .container .storiesBody {
+    height: 550px;
     position: relative;
+    top: 60px;
   }
-  #wrap #gallery .gallery-wrap ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3480px;
-    display: flex;
-    flex-flow: nowrap;
-    height: 100%;
+  #section #stories > .container .storiesBody .contents .conT dl dt a {
+    font-size: 16px;
   }
-  #wrap #gallery .gallery-wrap ul li {
-    width: 290px;
-    height: 100%;
-    list-style: none;
+  #section #stories > .container .storiesBody .contents .conT dl dd {
+    font-size: 0;
   }
-  #wrap #gallery .gallery-wrap ul li figure {
-    width: 100%;
-    height: 100%;
-  }
-  #wrap #gallery .gallery-wrap ul li .img-bg-1 {
-    background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover;
-  }
-  #wrap #gallery .gallery-wrap ul li .img-bg-2 {
-    background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover;
-  }
-  #wrap #gallery .gallery-wrap ul li .img-bg-3 {
-    background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover;
-  }
-  #wrap #gallery .gallery-wrap ul li .img-bg-4 {
-    background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover;
-  }
-  #wrap #gallery .gallery-wrap ul li .img-bg-5 {
-    background: url(../img/m_gallery_1.jpg) no-repeat 50% 50%/cover;
-  }
-  #wrap #gallery .gallery-wrap ul li .img-bg-6 {
-    background: url(../img/img_6.png) no-repeat 50% 50%/cover;
+  #section #stories > .container .storiesBody .contents:hover dl > dt > a {
+    color: #fff;
   }
 }
 @media screen and (max-width: 576px) {
@@ -946,5 +916,57 @@ body {
     border-bottom: 1px solid transparent;
     border-bottom-color: #000;
     transition: 0.5s;
+  }
+  #section {
+    display: none;
+  }
+  #wrap #mobile-gallery {
+    width: 100%;
+  }
+  #wrap #mobile-gallery .gallery-wrap {
+    width: 90%;
+    height: 290px;
+    position: relative;
+    display: flex;
+  }
+  #wrap #mobile-gallery .gallery-wrap ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1740px;
+    display: flex;
+    flex-flow: nowrap;
+    height: 100%;
+    display: flex;
+  }
+  #wrap #mobile-gallery .gallery-wrap ul li {
+    width: 270px;
+    height: 100%;
+    list-style: none;
+    margin-right: 10px;
+    display: flex;
+    box-sizing: border-box;
+  }
+  #wrap #mobile-gallery .gallery-wrap ul li figure {
+    width: 100%;
+    height: 100%;
+  }
+  #wrap #mobile-gallery .gallery-wrap ul li .img-bg-1 {
+    background: url(../img/Geochang_Galery_1-768x768.jpg) no-repeat 50% 50%/cover;
+  }
+  #wrap #mobile-gallery .gallery-wrap ul li .img-bg-2 {
+    background: url(../img/single-case-humb-01.jpg) no-repeat 50% 50%/cover;
+  }
+  #wrap #mobile-gallery .gallery-wrap ul li .img-bg-3 {
+    background: url(../img/geoje_thumbnail_2.jpg) no-repeat 50% 50%/cover;
+  }
+  #wrap #mobile-gallery .gallery-wrap ul li .img-bg-4 {
+    background: url(../img/Damyang_768x768_Main.jpg) no-repeat 50% 50%/cover;
+  }
+  .list {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    box-sizing: border-box;
   }
 }/*# sourceMappingURL=style.css.map */
