@@ -44,9 +44,12 @@
 </head>
 <body>
     <ul id="skip" class="ir_so">
+        <li><a href="#mobile-modal-menu">모바일 모달메뉴 바로가기</a></li>
         <li><a href="#header">헤더 바로가기</a></li>
-        <li><a href="#nav">메뉴 바로가기</a></li>
+        <li><a href="#main">PC 메인 바로가기</a></li>
+        <li><a href="#mobile-main">모바일 메인 바로가기</a></li>
         <li><a href="#content">내용 바로가기</a></li>
+        <li><a href="#footer">푸터 바로가기</a></li>
      </ul>
     <div id="wrap">
         <div class="mobile-modal-menu">
@@ -311,7 +314,7 @@
                 </div>
             </div>
         </main>
-        <section id="section">
+        <content id="content">
             <div id="stories">
                 <div class="container">
                     <div class="storiesBody">
@@ -373,17 +376,128 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="mobile-gallery">
-            <div class="gallery-wrap">
-                <ul class="list">
-                    <li class="item"><figure class="img-bg-1"></figure></li>
-                    <li class="item"><figure class="img-bg-2"></figure></li>
-                    <li class="item"><figure class="img-bg-3"></figure></li>
-                    <li class="item"><figure class="img-bg-4"></figure></li>
-                </ul>
+            <div class="main-container">
+                <div class="main-cases__group--03">
+                    <div class="main-cases__first">
+                        <div class="main-cases__item">
+                            <a href="javascript:">
+                                <div class="main-cases__thumb">
+                                    <img src="./img/Pohang8_1020x1020-552x552.jpg" alt="Pohang8Img">
+                                </div>
+                                <h3 class="jt-heading--03">
+                                    <span>Pohang-8 House</span>
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-cases__last">
+                        <div class="main-cases__item">
+                            <a href="javascript:">
+                                <div class="main-cases__thumb">
+                                    <img src="./img/main_la-phare-552x552.jpg" alt="la-phareImg">
+                                </div>
+                                <h3 class="jt-heading--03">
+                                    <span>La_Phare Cafe</span>
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-cases__group--04">
+                    <div class="main-cases__first">
+                        <a class="main-cases__more">
+                            <div class="jt-text--05">All Cases</div>
+                            <i class="jt-guide--icon">
+                                <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M46 1L66 21L46 41" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                    <path d="M66 21H0" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                </svg>
+                            </i>
+                        </a>
+                    </div>
+                    <div class="main-cases__last">
+                        <div class="main-cases__item" data-scroll data-scroll-offset="20%, 0">
+                            <a href="javascript:">
+                                <div class="main-cases__thumb">
+                                    <img src="./img/Busong_1020x1020.jpg" alt="">
+                                </div>
+                                <h3 class="jt-heading--03">
+                                    <span>Busongdong House</span>
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+             <!-- Swiper -->
+            <div class="mobile-swiper">
+                <div class="m-swiper mySwiper">
+                    <div class="swiper-wrapper m-swiper-wrapper">
+                        <div class="swiper-slide img-bg-1"><img src="./img/Geochang_Galery_1-768x768.jpg" alt=""></div>
+                        <div class="swiper-slide img-bg-2"><img src="./img/single-case-humb-01.jpg" alt=""></div>
+                        <div class="swiper-slide img-bg-3"><img src="./img/geoje_thumbnail_2.jpg" alt=""></div>
+                        <div class="swiper-slide img-bg-4"><img src="./img/Damyang_768x768_Main.jpg" alt=""></div>
+                        <div class="swiper-slide img-bg-5"><img src="./img/sectionImg.jpg" alt=""></div>
+                        <div class="swiper-slide img-bg-5"><img src="./img/1207_1-652x652.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </content>
+        <footer id="footer">
+            <div class="footer__inner">
+                <a data-barba-prevent="#" class="go-top">
+                    <span class="sr-only">위로 올라가기</span>
+                    <i class="jt-guide--icon">
+                        <svg width="28" height="44" viewBox="0 0 28 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 15L14 2L27 15" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                            <path d="M14 2L14 44" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                        </svg>
+                    </i>
+                </a>
+                <div class="footer__top">
+                    <div class="footer__typo">
+                        <p>빈 공간에 가치를 담다 </p>
+                        <span class="footer__typo-blank"></span>
+                    </div>
+                    <div class="footer__sns-wrap">
+                        <ul class="footer__sns">
+                            <li class="instagram">
+                                <a href="#">
+                                    <span>인스타그램</span>
+                                </a>
+                            </li>
+                            <li class="blog">
+                                <a href="#">
+                                    <span>블로그</span>
+                                </a>
+                            </li>
+                            <li class="youtube">
+                                <a href="#">
+                                    <span>유튜브</span>
+                                </a>
+                            </li>
+                            <li class="notion">
+                                <a href="#">
+                                    <span>노션</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__info">
+                        <p class="footer__info-btn">
+                            <span class="copyright">공간기록 © 2022</span>
+                            <i class="jt-guide--icon">
+                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L5.05063 5.5L9 1.5" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                </svg>
+                            </i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
