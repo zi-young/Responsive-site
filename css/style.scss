@@ -847,20 +847,112 @@ body {
             border-width: 1px 0;
 
             .footer__typo{
-                p{}
-                span.footer__typo-blank{}
+
+                p{
+                    font-size: 48px;
+                    font-weight: 400;
+                    line-height: 1.33;
+                }
+                span.footer__typo-blank{
+                    display: inline-block;
+                    width: 29px;
+                    height: 3px;
+                    position: relative;
+                    left: -10px;
+                    bottom: -3px;
+                    -webkit-animation: blink_caret 1.2s step-end infinite;
+                    animation: blink_caret 1.2s step-end infinite;
+                    @keyframes blink_caret {
+                        0%,
+                        100% {
+                            background: transparent;
+                        }
+                        50% {
+                            background: #000;
+                        }
+                    }
+                }
             }
             .footer__sns-wrap{
+                position: absolute;
+                right: 0;
+                bottom: 21px;
+                z-index: 1;
                 ul.footer__sns{
-                    li{}
+                    text-align: right;
+                    li{
+                        display: inline-block;
+                        vertical-align: middle;
+                        a{
+                            display: block;
+                            padding: 8px 20px;
+                            font-size: 15px;
+                            font-weight: 700;
+                            line-height: 1.86;
+                            >span{
+                                position: relative;
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width: 100%;
+                                    height: 1px;
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: -3px;
+                                    background: #000;
+                                    -webkit-transform-origin: 100% 50%;
+                                    -ms-transform-origin: 100% 50%;
+                                    transform-origin: 100% 50%;
+                                    -webkit-transform: scale3d(0, 1, 1);
+                                    transform: scale3d(0, 1, 1);
+                                    -webkit-transition: -webkit-transform .3s;
+                                    transition: -webkit-transform .3s;
+                                    transition: transform .3s;
+                                    transition: transform .3s, -webkit-transform .3s;
+                                }
+                            }          
+                            &:hover > span::after{
+                                webkit-transform-origin: 0% 50%;
+                                -ms-transform-origin: 0% 50%;
+                                transform-origin: 0% 50%;
+                                -webkit-transform: scale3d(1, 1, 1);
+                                transform: scale3d(1, 1, 1);
+                            }
+                        }
+                        &:first-child a{padding-left: 0;}
+                        &:last-child a{padding-right: 0;}
+                    }
+                    
                 }
             }
         }
         .footer__bottom{
+            padding: 29px 0 130px;
+            position: relative;
             .footer__info{
                 p.footer__info-btn{
-                    span.copyright{}
-                    i.jt-guide--icon{}
+                    display: inline-block;
+                    padding-right: 20px;
+                    position: relative;
+                    cursor: pointer;
+                    span.copyright{
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 1.6;
+                    }
+                    i.jt-guide--icon{
+                        width: 10px;
+                        height: 8px;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        margin-top: -3px;
+                        svg{
+                            display: block;
+                            width: 100%;
+                            height: auto
+                        }
+                    }
                 }
             }
         }
@@ -970,12 +1062,10 @@ body {
                     }
 
                     @keyframes blink_caret {
-
                         0%,
                         100% {
                             background: transparent;
                         }
-
                         50% {
                             background: #000;
                         }

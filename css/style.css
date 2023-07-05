@@ -769,6 +769,104 @@ body {
   border: solid #000;
   border-width: 1px 0;
 }
+#footer .footer__inner .footer__top .footer__typo p {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.33;
+}
+#footer .footer__inner .footer__top .footer__typo span.footer__typo-blank {
+  display: inline-block;
+  width: 29px;
+  height: 3px;
+  position: relative;
+  left: -10px;
+  bottom: -3px;
+  animation: blink_caret 1.2s step-end infinite;
+}
+@keyframes blink_caret {
+  0%, 100% {
+    background: transparent;
+  }
+  50% {
+    background: #000;
+  }
+}
+#footer .footer__inner .footer__top .footer__sns-wrap {
+  position: absolute;
+  right: 0;
+  bottom: 21px;
+  z-index: 1;
+}
+#footer .footer__inner .footer__top .footer__sns-wrap ul.footer__sns {
+  text-align: right;
+}
+#footer .footer__inner .footer__top .footer__sns-wrap ul.footer__sns li {
+  display: inline-block;
+  vertical-align: middle;
+}
+#footer .footer__inner .footer__top .footer__sns-wrap ul.footer__sns li a {
+  display: block;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.86;
+}
+#footer .footer__inner .footer__top .footer__sns-wrap ul.footer__sns li a > span {
+  position: relative;
+}
+#footer .footer__inner .footer__top .footer__sns-wrap ul.footer__sns li a > span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background: #000;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+#footer .footer__inner .footer__top .footer__sns-wrap ul.footer__sns li a:hover > span::after {
+  webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+#footer .footer__inner .footer__top .footer__sns-wrap ul.footer__sns li:first-child a {
+  padding-left: 0;
+}
+#footer .footer__inner .footer__top .footer__sns-wrap ul.footer__sns li:last-child a {
+  padding-right: 0;
+}
+#footer .footer__inner .footer__bottom {
+  padding: 29px 0 130px;
+  position: relative;
+}
+#footer .footer__inner .footer__bottom .footer__info p.footer__info-btn {
+  display: inline-block;
+  padding-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+#footer .footer__inner .footer__bottom .footer__info p.footer__info-btn span.copyright {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+#footer .footer__inner .footer__bottom .footer__info p.footer__info-btn i.jt-guide--icon {
+  width: 10px;
+  height: 8px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -3px;
+}
+#footer .footer__inner .footer__bottom .footer__info p.footer__info-btn i.jt-guide--icon svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 1200px) {
   #main .main-cases {
     margin-top: 100px;
