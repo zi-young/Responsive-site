@@ -96,9 +96,29 @@ prev.click(function(){
 })
 //prev 3-4-1-2 순으로 정렬
 
-// $('.type').typed({
-//   strings:['빈 공간에 가치를 담다'],
-//   typeSpeed:150,
-//   backDelay:200,
-//   loop: true
-// });
+$('.type').typed({
+  strings:['빈 공간에 가치를 담다 _'],
+  typeSpeed:200,
+  backDelay:150,
+  fadeOut: false,
+  smartBackspace: true,
+  cursorChar: '_',
+  loop: true
+});
+
+
+// 스크롤 헤더 이벤트
+
+$(window).on('scroll', function(){
+  if (window.scrollY > 80) {
+    $('#header').css({'height':'80px', 'borderBottom':'1px solid #000'}),
+    $('.h-box').css('margin-top','30px');
+  }else{
+    $('#header').css({'height':'113px', 'borderBottom':'none'}),
+    $('.h-box').css('margin-top','42px auto;');
+  }else if{
+    if (window.scrollY > 200){
+      
+    }
+  }
+});
