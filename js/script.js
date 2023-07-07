@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 0,    // 슬라이드 사이 여백
+    spaceBetween: 0,   // 슬라이드 사이 여백
 
     slidesPerView : 'auto', // 한 슬라이드에 보여줄 갯수
     centeredSlides: true,    //센터모드
@@ -16,11 +16,8 @@ var swiper = new Swiper(".mySwiper", {
     pagination: { // 호출(pager) 여부
       el: ".swiper-pagination", //버튼을 담을 태그 설정
       clickable: true, // 버튼 클릭 여부
-    },
-    navigation: {   // 버튼
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+    }
+    
   });
 
 
@@ -94,12 +91,12 @@ prev.click(function(){
     if(col3>3)col3=0;
     if(col4>3)col4=0;
 })
-//prev 3-4-1-2 순으로 정렬
+
 
 $('.type').typed({
   strings:['빈 공간에 가치를 담다 _'],
   typeSpeed:200,
-  backDelay:150,
+  backDelay:300,
   fadeOut: false,
   smartBackspace: true,
   cursorChar: '_',
@@ -109,16 +106,22 @@ $('.type').typed({
 
 // 스크롤 헤더 이벤트
 
-$(window).on('scroll', function(){
-  if (window.scrollY > 80) {
-    $('#header').css({'height':'80px', 'borderBottom':'1px solid #000'}),
+let Scroll = 80;
+$(window).on('scroll', function() {
+if (window.scrollY >= Scroll) {
+    $('#header').css({'height':'80px', 'borderBottom':'1px solid #000', 'transition':'.5s'});
     $('.h-box').css('margin-top','30px');
-  }else{
-    $('#header').css({'height':'113px', 'borderBottom':'none'}),
-    $('.h-box').css('margin-top','42px auto;');
-  }else if{
-    if (window.scrollY > 200){
-      
-    }
-  }
+}
+ 
+else {
+  $('#header').css({'height':'113px', 'borderBottom':'none', 'transition':'.5s'});
+  $('.h-box').css('margin-top','40px');
+}
+
+if (window.scrollY >= 2000) {
+  $('#header').hide();
+} else if (window.scrollY < 80) {
+  $('#header').show();
+}
 });
+
