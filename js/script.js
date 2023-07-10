@@ -109,8 +109,8 @@ $('.type').typed({
 let Scroll = 80;
 $(window).on('scroll', function() {
 if (window.scrollY >= Scroll) {
-    $('#header').css({'height':'80px', 'borderBottom':'1px solid #000', 'transition':'.5s'});
-    $('.h-box').css('margin-top','30px');
+  $('#header').css({'height':'80px', 'borderBottom':'1px solid #000', 'transition':'.5s'});
+  $('.h-box').css('margin-top','30px');
 }
  
 else {

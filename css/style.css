@@ -1,4 +1,26 @@
 @charset "UTF-8";
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9FA38C;
+}
+
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-button {
+  background: #9FA38C;
+  height: 15px;
+  border-radius: 50%;
+}
+
 .jt-heading--03 {
   margin-top: 31px;
   font-size: 22px;
@@ -1178,11 +1200,19 @@ body {
     z-index: 100;
   }
   #header {
-    padding: 0 25px;
-    height: 80px;
+    position: fixed;
+    height: 113px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 3;
+    box-sizing: border-box;
+    padding: 0 60px;
   }
   #header .h-box {
-    margin: 7px auto;
+    width: 100%;
+    margin-top: 25px;
   }
   #header .h-box .header-mobile-menu-bar {
     left: 0;
