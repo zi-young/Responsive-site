@@ -10,5 +10,5 @@ appbarBt.on({click:function(){
 }})
 appbarCloseBt.on({click:function(){
     mobileModalMenu.stop().animate({left:-100+'%'},500)
-    header.stop().animate({left:0},500)
+    header.stop().animate({left:0})
 }})
