@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView : 'auto', // 한 슬라이드에 보여줄 갯수
     centeredSlides: true,    //센터모드
     autoplay: {     //자동슬라이드 (false-비활성화)
-      delay: 2000, // 시간 설정
+      delay: 200000, // 시간 설정
       disableOnInteraction: false, // false-스와이프 후 자동 재생
     },
 

@@ -337,25 +337,26 @@ body {
 }
 
 /* Swiper */
-.swiperBox {
-  width: 100%;
-}
-
-.swiper-horizontal {
-  text-align: center;
-}
-
 /* pagination */
 .swiper-control {
-  display: inline-block;
+  width: 143px;
+  margin-left: -67px;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  font-size: 0;
+  text-align: center;
+  z-index: 1;
 }
 .swiper-control .custom-fraction {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 16px;
-  position: relative;
-  width: 160px;
   display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  bottom: auto;
+  left: auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-feature-settings: "tnum";
 }
 .swiper-control .custom-fraction .swiper-button-prev {
   display: inline-block;
@@ -415,12 +416,10 @@ body {
 }
 
 .swiper-slide {
-  text-align: center;
   font-size: 18px;
   background: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .swiper-slide img {
@@ -431,22 +430,26 @@ body {
      object-fit: cover;
 }
 
-#main .main-visual__typo {
-  max-width: 650px;
+#main .swiperBox {
+  width: 100%;
 }
-#main .main-visual__typo .casaTypo {
+#main .swiperBox .main-visual__typo {
+  max-width: 650px;
+  margin-top: 30px;
+}
+#main .swiperBox .main-visual__typo .casaTypo {
   font-size: 22px;
   line-height: 1.54;
   font-weight: 400;
   letter-spacing: 0;
 }
-#main .main-visual__typo .casaTypo a {
+#main .swiperBox .main-visual__typo .casaTypo a {
   display: inline-block;
   max-width: 100%;
   border-bottom: 1px solid transparent;
   transition: border 1s;
 }
-#main .main-visual__typo .casaTypo a:hover {
+#main .swiperBox .main-visual__typo .casaTypo a:hover {
   border-bottom: 1px solid #222;
 }
 #main .main-cases {
@@ -1311,16 +1314,6 @@ body {
   #mobile-main .m-main-visual__typo {
     max-width: calc(100% - 60px);
     margin-top: 15px;
-  }
-  #mobile-main .m-main-visual__typo .casaTypo {
-    font-size: 22px;
-    line-height: 1.36;
-  }
-  #mobile-main .m-main-visual__typo .casaTypo a span {
-    display: block;
-    white-space: pre;
-    text-overflow: ellipsis;
-    overflow: hidden;
   }
   #mobile-main .m-main-cases {
     margin-top: 70px;
