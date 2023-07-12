@@ -11,7 +11,14 @@ var swiper = new Swiper(".mySwiper", {
     loop : true,   // 슬라이드 반복 여부
 
     loopAdditionalSlides : 1,
-
+    navigation : { // 네비게이션
+      nextEl : '.swiper-button-next', // 오른쪽(다음) 화살표
+      prevEl : '.swiper-button-prev', // 왼쪽(이전) 화살표
+  },
+  pagination : { // 페이징
+      el : '.swiper-pagination',
+      clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+  },
     
 
 // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
@@ -208,7 +215,7 @@ if (window.scrollY >= Scroll) {
   $('#header').css({'height':'80px', 'borderBottom':'1px solid #000', 'transition':'.5s'});
   $('.h-box').css('margin-top','30px');
 }
- 
+
 else {
   $('#header').css({'height':'113px', 'borderBottom':'none'});
   $('.h-box').css('margin-top','40px');

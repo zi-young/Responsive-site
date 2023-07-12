@@ -1,14 +1,17 @@
 @charset 'utf-8';
 ::-webkit-scrollbar {
     width: 8px;
+    // border-radius: 50%;
   
   }
   ::-webkit-scrollbar {
     width: 15px;
+    // border-radius: 50%;
   }
    
   ::-webkit-scrollbar-thumb {
     background: #9FA38C;
+    border-radius: 20%;
   }
   
   ::-webkit-scrollbar-track {
@@ -400,29 +403,77 @@ body {
     margin: 0;
     padding: 0;
 }
-/**/
 
-// .swiper-slide {opacity:0.5; transition:opacity 0.5s;}
-// .swiper-slide-active {opacity:1;}
 
-// .changing {
-//     transition:opacity 0.3s;
-//     pointer-events:none;
-//   }
-  
-//   .changed {  
-//     transition:none;
-//   }
+
+/* Swiper */
+
+.swiperBox{width: 100%;}
+.swiper-horizontal{text-align: center;}
 
 
 /* pagination */
-.mySwiper .swiper-pagination {
-    position: absolute;
-    bottom: -30px;
-    text-align:left;
-    
+.swiper-control{
+    display: inline-block;
+    .custom-fraction{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 16px;
+            position: relative;
+            width: 160px;
+            display: inline-block;
+            .swiper-button-prev{
+                display: inline-block;
+                vertical-align: middle;
+                width: 32px;
+                height: 32px;
+                margin-top: 0;
+                position: relative;
+                left: auto;
+                right: auto;
+                top: auto;
+                background: none;
+                &::after{content: none;}
+                i.jt-guide--icon{
+                    width: 10px;
+                    height: 16px;
+                    margin-left: -5px;
+                    margin-top: -10px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                }
+                
+            }
+            .currentBox{
+                display: inline-block;
+                width: 70px;
+            }
+            .swiper-button-next{
+                display: inline-block;
+                vertical-align: middle;
+                width: 32px;
+                height: 32px;
+                position: relative;
+                left: auto;
+                right: auto;
+                top: auto;
+                margin-top: 0; 
+                &::after{content: none;}
+                i.jt-guide--icon{
+                    width: 10px;
+                    height: 16px;
+                    margin-left: -5px;
+                    margin-top: -10px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                }
+                
+            }
+           
+    }
 }
-
 .swiper {
     width: 100%;
     height: 100%;
@@ -443,11 +494,9 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
 #main {
     .main-visual__typo {
         max-width: 650px;
-        margin-top: 31px;
 
         .casaTypo {
             font-size: 22px;

@@ -9,6 +9,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: #9FA38C;
+  border-radius: 20%;
 }
 
 ::-webkit-scrollbar-track {
@@ -335,12 +336,77 @@ body {
   padding: 0;
 }
 
-/**/
+/* Swiper */
+.swiperBox {
+  width: 100%;
+}
+
+.swiper-horizontal {
+  text-align: center;
+}
+
 /* pagination */
-.mySwiper .swiper-pagination {
+.swiper-control {
+  display: inline-block;
+}
+.swiper-control .custom-fraction {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+  position: relative;
+  width: 160px;
+  display: inline-block;
+}
+.swiper-control .custom-fraction .swiper-button-prev {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-top: 0;
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  background: none;
+}
+.swiper-control .custom-fraction .swiper-button-prev::after {
+  content: none;
+}
+.swiper-control .custom-fraction .swiper-button-prev i.jt-guide--icon {
+  width: 10px;
+  height: 16px;
+  margin-left: -5px;
+  margin-top: -10px;
   position: absolute;
-  bottom: -30px;
-  text-align: left;
+  left: 50%;
+  top: 50%;
+}
+.swiper-control .custom-fraction .currentBox {
+  display: inline-block;
+  width: 70px;
+}
+.swiper-control .custom-fraction .swiper-button-next {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  margin-top: 0;
+}
+.swiper-control .custom-fraction .swiper-button-next::after {
+  content: none;
+}
+.swiper-control .custom-fraction .swiper-button-next i.jt-guide--icon {
+  width: 10px;
+  height: 16px;
+  margin-left: -5px;
+  margin-top: -10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 .swiper {
@@ -367,7 +433,6 @@ body {
 
 #main .main-visual__typo {
   max-width: 650px;
-  margin-top: 31px;
 }
 #main .main-visual__typo .casaTypo {
   font-size: 22px;
