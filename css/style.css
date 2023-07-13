@@ -342,11 +342,12 @@ body {
   width: 143px;
   margin-left: -67px;
   position: absolute;
-  bottom: 12px;
+  bottom: 5px;
   left: 50%;
   font-size: 0;
   text-align: center;
   z-index: 1;
+  background: white;
 }
 .swiper-control .custom-fraction {
   display: inline-block;
@@ -385,6 +386,7 @@ body {
 .swiper-control .custom-fraction .currentBox {
   display: inline-block;
   width: 70px;
+  background: white;
 }
 .swiper-control .custom-fraction .swiper-button-next {
   display: inline-block;
@@ -433,23 +435,29 @@ body {
 #main .swiperBox {
   width: 100%;
 }
-#main .swiperBox .main-visual__typo {
+#main .swiperBox .swiper-wrapper .main-visual-item .main-visual__picture .swiper-slide img.PcSwiper {
+  display: block;
+}
+#main .swiperBox .swiper-wrapper .main-visual-item .main-visual__picture .swiper-slide img.mSwiper {
+  display: none;
+}
+#main .swiperBox .swiper-wrapper .main-visual__typo {
   max-width: 650px;
   margin-top: 30px;
 }
-#main .swiperBox .main-visual__typo .casaTypo {
+#main .swiperBox .swiper-wrapper .main-visual__typo .casaTypo {
   font-size: 22px;
   line-height: 1.54;
   font-weight: 400;
   letter-spacing: 0;
 }
-#main .swiperBox .main-visual__typo .casaTypo a {
+#main .swiperBox .swiper-wrapper .main-visual__typo .casaTypo a {
   display: inline-block;
   max-width: 100%;
   border-bottom: 1px solid transparent;
   transition: border 1s;
 }
-#main .swiperBox .main-visual__typo .casaTypo a:hover {
+#main .swiperBox .swiper-wrapper .main-visual__typo .casaTypo a:hover {
   border-bottom: 1px solid #222;
 }
 #main .main-cases {
@@ -640,7 +648,7 @@ body {
 }
 
 #stories .container {
-  padding: 100px 0;
+  padding: 80px 0 150px 0;
 }
 
 #stories .storiesBody {
@@ -737,13 +745,13 @@ body {
 }
 
 #stories .storiesBody .contentsBtn .next {
-  top: 40%;
+  top: 50%;
   right: 20px;
   transform: rotate(90deg);
 }
 
 #stories .storiesBody .contentsBtn .prev {
-  top: 40%;
+  top: 50%;
   left: 20px;
   transform: rotate(-90deg);
 }
@@ -1304,16 +1312,62 @@ body {
     display: none;
   }
   #main {
+    padding: 113px 30px 0;
+    display: block;
+  }
+  #main .swiperBox .main-visual__picture > .swiper-slide img.PcSwiper {
+    display: none !important;
+  }
+  #main .swiperBox .main-visual__picture > .swiper-slide img.mSwiper {
+    display: block !important;
+  }
+  #main .swiperBox .main-visual__typo {
+    max-width: calc(100% - 60px);
+    margin-top: 20px;
+  }
+  #main .swiperBox .main-visual__typo p.casaTypo {
+    font-size: 22px;
+  }
+  #main .swiperBox .main-visual__typo p.casaTypo a {
+    display: inline-block;
+    max-width: 100%;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s;
+  }
+  #main .swiperBox .main-visual__typo p.casaTypo a span {
+    display: block;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #main .swiper-control {
+    right: 0;
+    width: auto;
+    left: 100%;
+  }
+  #main .swiper-control .custom-fraction {
+    background: white;
+  }
+  #main .swiper-control .custom-fraction .swiper-button-prev {
+    display: none;
+  }
+  #main .swiper-control .custom-fraction .currentBox {
+    width: auto;
+    font-size: 18px;
+  }
+  #main .swiper-control .custom-fraction .swiper-button-next {
+    display: none;
+  }
+  .main-cases {
+    display: none;
+  }
+  .main-cases__list {
     display: none;
   }
   #mobile-main {
     overflow-x: hidden;
     display: block;
-    padding: 110px 25px;
-  }
-  #mobile-main .m-main-visual__typo {
-    max-width: calc(100% - 60px);
-    margin-top: 15px;
+    padding: 0 40px 50px;
   }
   #mobile-main .m-main-cases {
     margin-top: 70px;
