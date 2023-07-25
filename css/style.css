@@ -3,23 +3,20 @@
   width: 8px;
 }
 
+/* //width: 스크롤바 너비; */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #9FA38C;
-  border-radius: 20%;
-}
-
+/* //스크롤 영역 스타일 */
 ::-webkit-scrollbar-track {
-  background: #ccc;
+  background: #eeeeee;
+  border-radius: 5px;
 }
-
-::-webkit-scrollbar-button {
-  background: #9FA38C;
-  height: 15px;
-  border-radius: 50%;
+ 
+::-webkit-scrollbar-thumb {
+  background: #969696;
+  border-radius: 5px;
 }
 
 .jt-heading--03 {
